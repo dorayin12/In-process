@@ -1,0 +1,300 @@
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+Traceback (most recent call last):
+  File "upzip.py", line 60, in <module>
+    main()
+  File "upzip.py", line 57, in main
+    insert_intens()
+  File "upzip.py", line 39, in insert_intens
+    conn = MySQLdb.connect (user="root", host="localhost", db="fitabase")
+  File "C:\Anaconda\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 204, in __in
+it__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'lo
+calhost' (10061)")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'),               reco
+rd_ID = LAST_INSERT_ID()
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+('Unexpected error:', <class '_mysql_exceptions.InternalError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 60, in <module>
+    main()
+  File "upzip.py", line 57, in main
+    insert_intens()
+  File "upzip.py", line 47, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.InternalError: (2, "File 'C:myprojectAPIminuteIntensitiesNarro
+w_merged.csv' not found (Errcode: 2)")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_I
+NSERT_ID()
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+('Unexpected error:', <class '_mysql_exceptions.InternalError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 59, in <module>
+    main()
+  File "upzip.py", line 56, in main
+    insert_intens()
+  File "upzip.py", line 46, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.InternalError: (2, "File 'C:myprojectAPIminuteIntensitiesNarro
+w_merged.csv' not found (Errcode: 2)")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_I
+NSERT_ID()
+('Unexpected error:', <class '_mysql_exceptions.InternalError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.InternalError: (2, "File 'C:myprojectAPIminuteIntensitiesNarro
+w_merged.csv' not found (Errcode: 2)")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+("LOAD DATA LOCAL INFILE '{0}' INTO TABLE intens FIELDS TERMINATED BY ',' IGNORE
+ 1 LINES (ID, @timevar, intensity)          set in_time = STR_TO_DATE(@timevar,
+'%m/%d/%Y %r'), record_ID = LAST_INSERT_ID()", 'C:\\myproject\\API\\minuteIntens
+itiesNarrow_merged.csv')
+('Unexpected error:', <type 'exceptions.TypeError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 223, in execute
+    self.errorhandler(self, TypeError, m)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+TypeError: must be string or read-only buffer, not tuple
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_I
+NSERT_ID()
+('Unexpected error:', <class '_mysql_exceptions.InternalError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.InternalError: (2, "File 'C:myprojectAPIminuteIntensitiesNarro
+w_merged.csv' not found (Errcode: 2)")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_I
+NSERT_ID()
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE %s INTO TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LI
+NES (ID, @timevar, intensity)          set in_time = STR_TO_DATE(@timevar, '%m/%
+d/%Y %r'), record_ID = LAST_INSERT_ID()
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+("LOAD DATA LOCAL INFILE %s INTO TABLE intens FIELDS TERMINATED BY ',' IGNORE 1
+LINES (ID, @timevar, intensity)          set in_time = STR_TO_DATE(@timevar, '%m
+/%d/%Y %r'), record_ID = LAST_INSERT_ID()", 'C:\\myproject\\API\\minuteIntensiti
+esNarrow_merged.csv')
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+("LOAD DATA LOCAL INFILE {!s} INTO TABLE intens FIELDS TERMINATED BY ',' IGNORE
+1 LINES (ID, @timevar, intensity)          set in_time = STR_TO_DATE(@timevar, '
+%m/%d/%Y %r'), record_ID = LAST_INSERT_ID()", 'C:\\myproject\\API\\minuteIntensi
+tiesNarrow_merged.csv')
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+("LOAD DATA LOCAL INFILE {0} INTO TABLE intens FIELDS TERMINATED BY ',' IGNORE 1
+ LINES (ID, @timevar, intensity)          set in_time = STR_TO_DATE(@timevar, '%
+m/%d/%Y %r'), record_ID = LAST_INSERT_ID()", 'C:\\myproject\\API\\minuteIntensit
+iesNarrow_merged.csv')
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE C:\myproject\API\minuteIntensitiesNarrow_merged.csv INTO
+TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+        set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_INS
+ERT_ID()
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE C:\myproject\API\minuteIntensitiesNarrow_merged.csv INTO
+TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+        set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_INS
+ERT_ID()
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE C:\myproject\API\minuteIntensitiesNarrow_merged.csv INTO
+TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+        set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_INS
+ERT_ID()
+('Unexpected error:', <class '_mysql_exceptions.ProgrammingError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax
+; check the manual that corresponds to your MariaDB server version for the right
+ syntax to use near 'C:\\myproject\\API\\minuteIntensitiesNarrow_merged.csv INTO
+ TABLE intens FIELDS TER' at line 1")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE C:\myproject\API\minuteIntensitiesNarrow_merged.csv INTO
+TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+        set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_INS
+ERT_ID()
+('Unexpected error:', <class '_mysql_exceptions.ProgrammingError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax
+; check the manual that corresponds to your MariaDB server version for the right
+ syntax to use near 'C:\\myproject\\API\\minuteIntensitiesNarrow_merged.csv INTO
+ TABLE intens FIELDS TER' at line 1")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_I
+NSERT_ID()
+('Unexpected error:', <class '_mysql_exceptions.InternalError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.InternalError: (2, "File 'C:myprojectAPIminuteIntensitiesNarro
+w_merged.csv' not found (Errcode: 2)")
+
+C:\myproject\API>python upzip.py
+Export-1-18-2017_2_34_pm.zip is unzipped
+C:\myproject\API\minuteIntensitiesNarrow_merged.csv
+minuteIntensitiesNarrow_merged
+LOAD DATA LOCAL INFILE 'C:\myproject\API\minuteIntensitiesNarrow_merged.csv' INT
+O TABLE intens FIELDS TERMINATED BY ',' IGNORE 1 LINES (ID, @timevar, intensity)
+          set in_time = STR_TO_DATE(@timevar, '%m/%d/%Y %r'), record_ID = LAST_I
+NSERT_ID()
+('Unexpected error:', <class '_mysql_exceptions.InternalError'>)
+Traceback (most recent call last):
+  File "upzip.py", line 58, in <module>
+    main()
+  File "upzip.py", line 55, in main
+    insert_intens()
+  File "upzip.py", line 45, in insert_intens
+    cursor.execute(query)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\cursors.py", line 226, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Anaconda\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorvalue
+_mysql_exceptions.InternalError: (2, "File 'C:myprojectAPIminuteIntensitiesNarro
+w_merged.csv' not found (Errcode: 2)")
+
+C:\myproject\API>
